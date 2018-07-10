@@ -1,0 +1,45 @@
+.header {
+    background-color:#F8F8F8 ;
+    font-size: 14px;
+}
+
+.search {
+    margin-right: 30px ;
+    margin-top: -20px ;
+    margin-bottom: 20px ;
+}
+
+
+.menu {
+    background-color: white;
+}
+
+.hover:hover span {
+    border-bottom: 3px solid;
+}
+
+.logo {
+   margin-top: -30px 
+}
+
+.margin-t-20 {
+    margin-top: -20px 
+}
+
+.margin-r-30 {
+    margin-right: 30px 
+}
+
+.margin-r-20 {
+     margin-right: 20px 
+}
+
+.icon {
+    vertical-align: top;
+    padding-right: 5px
+}
+
+.logo {
+    width: 140px;
+    height: 80px;
+}

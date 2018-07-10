@@ -1,2 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@font-face {
+    font-family:"Century" ;
+    src: url(./assets/fonts/CENTURY.TTF) format("truetype");
+}
+
+
+body {
+    font-family: "Century" ;
+    color: #AB954F;
+}

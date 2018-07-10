@@ -1,0 +1,66 @@
+.footer {
+   background-color: #FDEDEC;
+   font-size: 14px;
+}
+
+.about {
+    padding-top: 20px ;
+    padding-bottom: 20px ;
+}
+
+.about div {
+    background-color: rgba(199, 187, 171, 0.398);
+    text-align: center;
+    padding: 20px 50px 10px 50px;
+}
+
+.about-left  {
+    padding-left: 100px;
+}
+
+.about-right  {
+    padding-right: 100px;
+}
+
+.icon {
+    font-size: 60px 
+}
+
+.logo {
+    width: 60px;
+    height: 40px;
+    margin-top: -10px;
+}
+
+.footer-detail  {
+    font-size: 10px;
+}
+
+.footer-detail div {
+    padding-right: 30px;
+    padding-left: 30px
+}
+
+.footer-detail-sec1 {
+    font-size: 12px;
+    color: black;
+}
+
+.footer-detail-sec2 {
+    margin-top: -15px;
+    font-size: 10px;
+    color: black;
+}
+
+.subscibe {
+    background-color: #AB954F;
+    color: white; 
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+input[type=text] {
+    height: 26px;
+    width: 220px;
+    text-align: center;
+}
