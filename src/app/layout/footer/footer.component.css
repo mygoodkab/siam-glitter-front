@@ -51,7 +51,10 @@
     font-size: 10px;
     color: black;
 }
-
+.footer-detail-sec3 {
+     background-color:#F8F8F8;
+     color: black ;
+}
 .subscibe {
     background-color: #AB954F;
     color: white; 
