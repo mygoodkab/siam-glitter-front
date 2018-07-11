@@ -1,3 +1,88 @@
-<p>
-  home works!
-</p>
+<div class="home">
+
+  <!-- BANNER SLIDER -->
+  <div id="carouselExampleIndicators" class="carousel slide carousel-fade btn-slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li *ngFor="let img of img_slide; let i = index;" data-target="#carouselExampleIndicators" [attr.data-slide-to]="i" [class.active]="i==0">
+    </ol>
+    <div class="carousel-inner">
+      <div *ngFor="let img of img_slide; let i = index;" class="carousel-item" [class.active]="i==0">
+        <img class="d-block w-100 img-slide" [src]="img.img" alt="First slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- END BANNER SLIDER -->
+
+  <!-- NEW ARRIVAL -->
+  <div class="row new-arrival-header">
+    <div class="col-5">
+      <hr>
+    </div>
+    <div class="col-2 h1">
+      <span> NEW ARRIVAL </span>
+    </div>
+    <div class="col-5">
+      <hr>
+    </div>
+  </div>
+  <div class="row" style="padding: 0px">
+    <div *ngFor="let item of new_arrival; let i = index;" class="col-4">
+      <div class="new-arrival-item">
+        <img class="new-arrival-item-img" [src]="item.img">
+        <div class="new-arrival-item-detail">
+          <span> {{item.name}} </span>
+          <p>
+            <span> {{item.pro_id}} </span>
+          </p>
+          <span> {{item.detail_short}} </span>
+        </div>
+        <div class="shop-now">
+          <span> SHOP NOW </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END NEW ARRIVAL -->
+
+  <!-- BANNER -->
+  <div class="banner">
+    <img class="banner-img" src="../../../assets/images/11.jpg">
+  </div>
+  <!-- END BANNER -->
+
+  <!-- PRODUCT -->
+  <div class="row new-arrival-header">
+    <div class="col-5">
+      <hr>
+    </div>
+    <div class="col-2 h1">
+      <span> PRODUCTS </span>
+    </div>
+    <div class="col-5">
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div *ngFor="let prodct of products; let i=index" class="col-4 product">
+      <div class="product-list">
+        <img class="product-img" [src]="prodct.img">
+        <div class="product-detail">  
+          <span> {{prodct.name}}</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!--  END PRODUCT -->
+
+</div>

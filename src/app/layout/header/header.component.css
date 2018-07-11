@@ -16,7 +16,9 @@
 
 .hover:hover span {
     border-bottom: 3px solid;
+    cursor: pointer;
 }
+
 
 .logo {
    margin-top: -30px 
@@ -42,4 +44,16 @@
 .logo {
     width: 140px;
     height: 80px;
+}
+
+.stick-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    Z-INDEX: 1;
+}
+
+.blank-menu {
+
+    padding: 25px;
 }
