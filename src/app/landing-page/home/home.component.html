@@ -35,18 +35,18 @@
   </div>
   <div class="row" style="padding: 0px">
     <div *ngFor="let item of new_arrival; let i = index;" class="col-4">
-      <div class="new-arrival-item">
+      <div class="new-arrival-item" [attr.id]="'new_arrival_item'+i">
         <img class="new-arrival-item-img" [src]="item.img">
-        <div class="new-arrival-item-detail">
-          <span> {{item.name}} </span>
-          <p>
-            <span> {{item.pro_id}} </span>
-          </p>
-          <span> {{item.detail_short}} </span>
-        </div>
-        <div class="shop-now">
-          <span> SHOP NOW </span>
-        </div>
+      </div>
+      <div class="new-arrival-item-detail">
+        <span> {{item.name}} </span>
+        <p>
+          <span> {{item.pro_id}} </span>
+        </p>
+        <span> {{item.detail_short}} </span>
+      </div>
+      <div class="shop-now">
+        <span> SHOP NOW </span>
       </div>
     </div>
   </div>
@@ -72,9 +72,9 @@
   </div>
   <div class="row">
     <div *ngFor="let prodct of products; let i=index" class="col-4 product">
-      <div class="product-list">
+      <div class="product-list" [attr.id]="'prodct_list'+i">
         <img class="product-img" [src]="prodct.img">
-        <div class="product-detail">  
+        <div class="product-detail">
           <span> {{prodct.name}}</span>
         </div>
       </div>

@@ -26,28 +26,6 @@ export class HeaderComponent implements OnInit {
       logo.classList.add('blank-menu');
 
     }
-    // if (sticky >= window_scroll) {
-    //   console.log('Gooooooooooooooooooooooood');
-    //   stick_header.classList.remove('stick-header');
-    //   logo.classList.remove('blank-menu');
-    // }
-
-    console.log('Sticky : ', sticky);
-    console.log('Window_scroll : ', window_scroll);
-    // if (sticky - window_scroll < 61) {
-    //   stick_header.classList.remove('stick-header');
-    //   logo.classList.remove('blank-menu');
-    // }
-    // if (sticky - 100 < window_scroll) {
-    //   stick_header.classList.remove('stick-header');
-    //   logo.classList.remove('blank-menu');
-
-    // } else {
-    //   stick_header.classList.add('stick-header');
-    //   logo.classList.add('blank-menu');
-
-    // }
-
 
   }
 

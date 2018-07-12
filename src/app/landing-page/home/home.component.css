@@ -41,17 +41,20 @@
 .new-arrival-item-detail {
     padding: 10px 0px 10px 0px;
     background-color:#E8E8E8;
+    text-align: center;
  }
 
 .new-arrival-item-img {
-   max-width: 400px;
+   /* max-width: 300px; */
    width: 100%;
-   height: 450px;
+   height: 100%;
 } 
 
 .shop-now {
     color: white;
     background-color:#ECA186;
+    text-align: center;
+    padding: 10px 0px 10px 0px; 
 }
  
 .h1 {
@@ -82,9 +85,11 @@
 }
 
 .product-img {
-    max-width: 400px;
+    /* max-width: 400px; */
+    /* width: 300px;
+    height: 300px; */
     width: 100%;
-    height: 400px;
+    height: 100%;
 }
 
 .product-detail {
@@ -97,7 +102,7 @@
     padding-right: 20px;
     left: 0px;
     right: 0px;
-    top: 300px;
+    top: 80%;
     bottom: 0px;
     font-size: 20px;
 } 
@@ -113,5 +118,5 @@ hr {
 @media screen and (min-width: 1500px){
     .h1 {
         font-size: 30px;
-    }
+    }     
 }

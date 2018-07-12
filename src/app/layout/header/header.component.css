@@ -1,6 +1,6 @@
 .header {
     background-color:#F8F8F8 ;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .search {
@@ -56,4 +56,10 @@
 .blank-menu {
 
     padding: 25px;
+}
+
+@media screen and (max-width: 1279px){
+    .header {
+        font-size: 14px;
+    }     
 }
