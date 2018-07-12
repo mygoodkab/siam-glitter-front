@@ -41,6 +41,7 @@ import {
 import { LayoutComponent } from './layout/layout.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { HttpClientModule } from '../../node_modules/@angular/common/http';
 
 
 
@@ -52,6 +53,7 @@ import { FooterComponent } from './layout/footer/footer.component';
     FooterComponent,
   ],
   imports: [
+    HttpClientModule,
     BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,

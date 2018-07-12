@@ -4,11 +4,11 @@
 }
 
 .about {
-    padding-top: 20px ;
-    padding-bottom: 20px ;
+    padding: 20px 0px 20px 0px;
+    margin: 0px;
+    
 }
-
-.about div {
+.about-menu {
     background-color: rgba(199, 187, 171, 0.398);
     text-align: center;
     padding: 20px 50px 10px 50px;
@@ -38,18 +38,21 @@
 
 .footer-detail div {
     padding-right: 30px;
-    padding-left: 30px
+    padding-left: 30px;
+   
 }
 
 .footer-detail-sec1 {
     font-size: 12px;
     color: black;
+    margin:0px;
 }
 
 .footer-detail-sec2 {
     margin-top: -15px;
     font-size: 15px;
     color: black;
+    margin:0px;
 }
 
 .footer-detail-sec3 {
@@ -65,8 +68,10 @@
 }
 
 input[type=text] {
-    height: 26px;
-    width: 220px;
+    max-width: 300px;
+    min-width: 150px;
+    height: 100%;
+    width: 80%;
     text-align: center;
 }
 
