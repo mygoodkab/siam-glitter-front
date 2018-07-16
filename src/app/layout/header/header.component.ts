@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-
+import { AppService } from '../../app.service';
+​​import { Router, ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -7,7 +8,12 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  categories: any;
+
+  constructor(
+    private appService: AppService,
+    private router: Router
+  ) { }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -30,6 +36,18 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.getCategory();
   }
 
+  async getCategory() {
+    this.categories = await this.appService.getCategory('');
+  }
+
+  // route_category(id) {
+  //   this.router.navigate(['home/category', id]);
+  // }
+
+  route(link, params) {
+    this.router.navigate([link, params]);
+  }
 }

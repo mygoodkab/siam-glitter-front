@@ -1,8 +1,8 @@
 
 
 .home {
-    padding: 0px 100px 50px 100px;
-
+    /* padding: 0px 100px 50px 100px; */
+    padding: 0px 5% 2% 5%; 
 }
 
 .img-slide {  
@@ -35,9 +35,6 @@
    text-align: center;
    border: 1px solid;
    border-color:#E8E8E8;
-
-   /* margin-left: 5px;
-   margin-right: 5px; */
 }
 
 
@@ -126,8 +123,3 @@ hr {
     }     
 }
 
-@media screen and (max-width: 767px){
-    .home {
-        padding: 0px 50px 20px 50px;
-    }
-}

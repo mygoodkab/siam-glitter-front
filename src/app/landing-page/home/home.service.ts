@@ -11,7 +11,7 @@ export class HomeService {
     private http: HttpClient
   ) { }
 
-  baseURL = this.appService.baseURPL;
+  baseURL = this.appService.baseURL;
 
   cbase(url, arr) {
     // tslint:disable-next-line:one-variable-per-declaration
@@ -24,17 +24,4 @@ export class HomeService {
     return url;
   }
 
-  // SERVICE MODEL
-  private prodoct(url, params) {
-    return this.http.get(this.cbase(url, params)).toPromise();
-  }
-
-  // CALL SERVICE
-  getProduct(query) {
-    return this.prodoct('product' + query, []);
-  }
-
-  getNewProduct(query) {
-    return this.prodoct('product/new' + query, []);
-  }
 }

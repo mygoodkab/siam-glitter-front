@@ -1,75 +1,87 @@
 <div class="header">
-
+  <!-- LOGO -->
+  <div class="row" id="logo">
+    <div class="p-3 col-md-12 justify-content-center" style="z-index: 10;" (click)="route('/home','')">
+      <img class="logo" src="../../../assets/images/siam-glitter.png">
+    </div>
+  </div>
+  <!-- END LOGO -->
   <!-- MENU HEADER -->
-  <div class="d-flex justify-content-between">
-    <div class="d-flex justify-content-start">
-      <div class="p-4 bd-highlight hover">
-        <span>CONTACT</span>
-      </div>
-      <div class="p-4 bd-highlight hover">
-        <span> EVENT & NEWS</span>
-      </div>
-      <div class="p-4 bd-highlight hover">
-        <span> THE STORY </span>
+  <div class="row" style="margin-top: -6%;">
+    <div class="col-md-6">
+      <div class="row justify-content-start">
+        <div class="col-md-3 p-4 hover">
+          <span>CONTACT</span>
+        </div>
+        <div class="col-md-4 p-4 hover">
+          <span> EVENT & NEWS</span>
+        </div>
+        <div class="col-md-3 p-4 hover">
+          <span> THE STORY </span>
+        </div>
       </div>
     </div>
-    <div class="d-flex justify-content-end margin-r-30">
-      <div class="p-4 bd-highlight hover">
-        <i class="material-icons icon"> person </i>
-        <span> LOGIN </span>
+    <!-- <div class="p-3 col-md-2">
+        <img class="logo" src="../../../assets/images/siam-glitter.png">
+      </div> -->
+    <div class="col-md-6">
+      <div class="row justify-content-end">
+        <div class="col-md-3 p-4 hover menu-rigth " style="text-align: right; ">
+          <i class="material-icons icon"> person </i>
+          <span> LOGIN </span>
+        </div>
+        <div class="col-md-1 p-4 menu-rigth " style="text-align: center; ">
+          <b> | </b>
+        </div>
+        <div class="col-md-1 p-4 menu-rigth" style="text-align: center;">
+          <i class="material-icons icon"> loyalty </i>
+          <span> (0) </span>
+        </div>
+        <div class="col-md-1 p-4 menu-rigth" style="text-align: center;">
+          <i class="material-icons icon"> shopping_cart </i>
+          <span> (0) </span>
+        </div>
+        <div class="col-md-1 p-4 menu-rigth " style="text-align: center; ">
+          <b> | </b>
+        </div>
+        <div class="col-md-2 p-4 menu-rigth " style="text-align: left; ">
+          <span>EN </span>
+        </div>
       </div>
-      <div class="p-4 bd-highlight">
-        <b> | </b>
-      </div>
-      <div class="p-4 bd-highlight">
-        <i class="material-icons icon"> loyalty </i>
-        <span> (0) </span>
-        &nbsp;&nbsp;&nbsp;
-        <i class="material-icons icon"> shopping_cart </i>
-        <span> (0) </span>
-      </div>
-      <div class="p-4 bd-highlight">
-        <b> | </b>
-      </div>
-      <div class="p-4 bd-highlight"> EN </div>
     </div>
   </div>
   <!-- END MENU HEADER -->
 
-  <!-- LOGO -->
-  <div class="d-flex justify-content-between" id="logo">
-    <div class="p-2 bd-highlight"></div>
-    <div class="p-2 bd-highlight logo">
-        <img class="logo" src="../../../assets/images/siam-glitter.png">
-    </div>
-    <div class="p-2 bd-highlight search">
+  <!-- SEARCH -->
+  <div class="row justify-content-end">
+    <div class="col-md-12 search" style="text-align: right;">
       <i class="material-icons icon"> search </i>
       <span> SEARCH</span>
     </div>
   </div>
-  <!-- END LOGO -->
+  <!-- END SEARCH -->
 
   <!-- MAIN MENU -->
-  <div class="d-flex justify-content-center menu " id="stick-header">
-    <div class="p-3 bd-highlight hover">
-      <span>JEWELRY </span>
+  <div class="row justify-content-center menu " id="stick-header">
+    <div *ngFor="let category of categories?.data; let i=index" class="col-xs-2 col-md-1 p-3  bd-highlight hover" (click)="route('home/category',category._id)">
+      <span> {{category.categoryName.toUpperCase()}} </span>
     </div>
-    <div class="p-3 bd-highlight hover">
+    <!-- <div class="col-1 bd-highlight hover">
       <span>PEARL</span>
     </div>
-    <div class="p-3 bd-highlight hover">
+    <div class="col-1 bd-highlight hover">
       <span>BAG</span>
     </div>
-    <div class="p-3 bd-highlight hover">
+    <div class="col-1bd-highlight hover">
       <span>SCARF</span>
     </div>
-    <div class="p-3 bd-highlight hover">
+    <div class="col-1 bd-highlight hover">
       <span>WATCH</span>
     </div>
-    <div class="p-3 bd-highlight hover">
+    <div class="col-1 bd-highlight hover">
       <span>FRAGRANCE</span>
-    </div>
+    </div> -->
   </div>
   <!--END MAIN MENU -->
-  
+
 </div>

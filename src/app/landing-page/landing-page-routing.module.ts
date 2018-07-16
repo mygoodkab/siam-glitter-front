@@ -10,7 +10,7 @@ const routes: Routes = [
 
   },
   {
-    path: 'category',
+    path: 'category/:id',
     component: CategoryComponent
 
   }
